@@ -1,0 +1,26 @@
+.table {
+    td, tr {
+        vertical-align: middle;
+    }
+
+    tr.selectable {
+        cursor: pointer;
+    }
+
+    th a {
+        color: inherit;
+        margin-right: 5px;
+    }
+
+    @for $i from 1 through 5 {
+        tr.is-level-#{$i} {
+            td.model-title {
+                padding-left: #{($i + 0.5)}rem;
+
+                &:before {
+                    content: '⊢';
+                }
+            }
+        }
+    }
+}

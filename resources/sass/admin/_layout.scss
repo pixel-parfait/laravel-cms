@@ -1,0 +1,58 @@
+#app {
+    padding-top: $navbar-height;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $dark;
+    padding: $navbar-height + 1.5rem 0 0;
+    width: $sidebar-width;
+    height: 100%;
+
+    .menu-label {
+        padding-left: 0.75rem;
+    }
+
+    .menu-list {
+        a {
+            display: flex;
+            align-items: center;
+            padding-left: 1.5rem;
+        }
+
+        .icon {
+            margin-right: 0.25em;
+        }
+    }
+}
+
+#main-content {
+    padding: 1.5rem 1.5rem 1.5rem $sidebar-width + 1.5rem;
+
+    .view-head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+
+        &-title {
+            display: flex;
+            align-items: center;
+
+            .tag {
+                margin-left: 1rem;
+            }
+        }
+
+        .title {
+            margin-bottom: 0;
+        }
+
+        .buttons {
+            margin-left: 2rem;
+            padding-top: .5rem;
+        }
+    }
+}

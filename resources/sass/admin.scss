@@ -1,0 +1,22 @@
+// Fonts
+@import 'fonts';
+
+// Variables
+@import 'admin/variables';
+
+// Bulma
+@import '~bulma/bulma';
+
+// Layout
+@import 'admin/layout';
+
+// Elements
+@import 'admin/elements/all';
+
+// Components
+@import 'admin/components/all';
+
+// Plugins
+// @TODO: pour le moment ça ne fonctionne pas
+// https://github.com/avil13/vue-sweetalert2/issues/50#issuecomment-611637397
+@import '~sweetalert2/src/sweetalert2';

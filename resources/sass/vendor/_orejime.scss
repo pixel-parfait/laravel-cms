@@ -1,0 +1,46 @@
+.orejime {
+    &-Modal {
+        font-size: $size-7;
+
+        &-header,
+        &-body,
+        &-footer {
+            padding: 1rem 1.5rem;
+        }
+
+        &-title {
+            line-height: $title-line-height;
+            padding-right: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+    &-Notice {
+        bottom: 1rem;
+        right: 1rem;
+        left: 1rem;
+        width: auto;
+        max-width: none;
+
+        &-actions {
+            margin: -0.25rem;
+        }
+
+        &-actionItem {
+            display: inline-flex;
+        }
+    }
+
+    &-Button {
+        margin: 0.25rem;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &-AppToggles {
+        margin: -0.25rem -0.25rem 0.5rem;
+    }
+}

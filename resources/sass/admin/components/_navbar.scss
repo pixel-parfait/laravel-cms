@@ -1,0 +1,14 @@
+.navbar {
+    &-item {
+        svg {
+            margin-right: 0.5em;
+        }
+    }
+
+    &-end {
+        a.icon {
+            color: $white;
+            margin-left: 1em;
+        }
+    }
+}

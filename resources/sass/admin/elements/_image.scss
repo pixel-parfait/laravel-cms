@@ -1,0 +1,36 @@
+.image {
+    img {
+        object-fit: cover;
+    }
+
+    &.is-loading {
+        position: relative;
+        background-color: $light;
+
+        &:after {
+            @include loader;
+            position: absolute !important;
+            left: calc(50% - (1em / 2));
+            top: calc(50% - (1em / 2));
+        }
+    }
+
+    &-loading-progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: $primary;
+            transition: width 100ms;
+        }
+    }
+}

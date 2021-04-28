@@ -1,0 +1,5 @@
+.loading-spinner {
+    margin: 1rem;
+
+    @include loader;
+}

@@ -1,0 +1,21 @@
+@import 'fonts';
+@import 'variables';
+
+$body-size: 16px;
+
+@import '~bulma/sass/utilities/all';
+@import '~bulma/sass/base/all';
+@import '~bulma/sass/grid/columns';
+@import '~bulma/sass/elements/content';
+@import '~bulma/sass/elements/title';
+
+body {
+    padding: 1rem;
+}
+
+@import 'elements/content';
+
+.mce-content-body [data-mce-selected=inline-boundary] {
+    background: none;
+    box-shadow: 0 0 0 2px #b4d7ff;
+}

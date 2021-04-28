@@ -1,0 +1,39 @@
+// Initial colors
+$black: #000000;
+$white: #ffffff;
+$orange: #ff470f;
+$yellow: #ffe08a;
+$green: #48c78e;
+$turquoise: #00d1b2;
+$cyan: #3e8ed0;
+$blue: #485fc7;
+$purple: #b86bff;
+$red: #f14668;
+
+// Derived colors
+$text: $black;
+$primary: $blue;
+$link: inherit;
+$link-hover: inherit;
+
+$text-strong: inherit;
+
+// Typography
+$family-sans-serif: 'Poppins', Arial, sans-serif;
+$body-size: 16px;
+
+// Titles
+$title-color: inherit;
+$subtitle-color: inherit;
+
+// Content
+$content-blockquote-background-color: transparent;
+$content-blockquote-border-left: none;
+$content-blockquote-padding: 0;
+
+// Orejime
+$orejime-theme-bg: $white;
+$orejime-theme-color: $text;
+$orejime-box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+$orejime-blue: $cyan;
+$orejime-green: $green;

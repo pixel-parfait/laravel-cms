@@ -1,0 +1,9 @@
+.panel .panel-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .buttons:last-child {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,99 @@
+.label.is-required {
+    position: relative;
+
+    &:after {
+        content: '*';
+        position: absolute;
+        color: $red;
+        margin-left: .2em;
+    }
+}
+
+.checkbox-group {
+    column-count: 3;
+}
+
+.draggable-handle {
+    cursor: grab;
+
+    &:active {
+        cursor: grabbing;
+    }
+}
+
+.invoice-items-total {
+    display: flex;
+    justify-content: flex-end;
+
+    .table {
+        min-width: 320px;
+    }
+}
+
+textarea.input {
+    resize: vertical;
+}
+
+.control.has-unit {
+    display: flex;
+
+    .input {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .unit {
+        display: flex;
+        align-items: center;
+        background: $grey-lighter;
+        padding: 0 10px;
+        border-bottom-right-radius: $radius;
+        border-top-right-radius: $radius;
+    }
+}
+
+.file {
+    flex-direction: column;
+
+    &-preview {
+        position: relative;
+        border: $button-border-width solid $file-border-color;
+        border-top-left-radius: $file-radius;
+        border-top-right-radius: $file-radius;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            vertical-align: top;
+            transition: opacity 200ms;
+        }
+
+        & + .button {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            margin-top: -$button-border-width;
+        }
+
+        &:hover img {
+            opacity: 0.7;
+        }
+    }
+
+    &-actions {
+        position: absolute;
+        bottom: 0.75rem;
+        right: 0.75rem;
+        transition: opacity 200ms;
+    }
+
+    &:not(:hover) {
+        .file-actions {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}
+
+.is-loading {
+    pointer-events: none;
+    cursor: not-allowed;
+}
